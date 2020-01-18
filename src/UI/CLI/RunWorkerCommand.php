@@ -2,7 +2,6 @@
 
 namespace Asiries335\DenormalizationQueue\UI\CLI;
 
-use Asiries335\DenormalizationQueue\DTO\Run1WorkerData;
 use Asiries335\DenormalizationQueue\DTO\RunWorkerData;
 use Asiries335\DenormalizationQueue\Tasks\RunWorkerTask;
 use Symfony\Component\Console\Command\Command;
