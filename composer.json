@@ -5,7 +5,8 @@
     "license": "MIT",
     "minimum-stability": "dev",
     "require": {
-        "symfony/console": "^5.1@dev"
+        "symfony/console": "^5.1@dev",
+        "leocavalcante/shape": "dev-master"
     },
     "autoload": {
         "psr-4": {

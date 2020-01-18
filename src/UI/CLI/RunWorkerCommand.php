@@ -2,12 +2,18 @@
 
 namespace Asiries335\DenormalizationQueue\UI\CLI;
 
+use Asiries335\DenormalizationQueue\Tasks\RunWorkerTask;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
 class RunWorkerCommand extends Command
 {
+    /**
+     * Default name command
+     *
+     * @var string
+     */
     protected static $defaultName = 'queue-denormalized:run-worker';
 
     /**
@@ -29,9 +35,8 @@ class RunWorkerCommand extends Command
      *
      * @return void
      */
-    protected function execute(InputInterface $input, OutputInterface $output) : void
+    protected function execute(InputInterface $input, OutputInterface $output)
     {
-        // ...
-        return 0;
+        new RunWorkerTask();
     }
 }
