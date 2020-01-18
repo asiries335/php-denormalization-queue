@@ -4,5 +4,12 @@
     "type": "library",
     "license": "MIT",
     "minimum-stability": "dev",
-    "require": {}
+    "require": {
+        "symfony/console": "^5.1@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Asiries335\\DenormalizationQueue\\": "src/"
+        }
+    }
 }
