@@ -2,6 +2,8 @@
 
 namespace Asiries335\DenormalizationQueue\UI\CLI;
 
+use Asiries335\DenormalizationQueue\DTO\Run1WorkerData;
+use Asiries335\DenormalizationQueue\DTO\RunWorkerData;
 use Asiries335\DenormalizationQueue\Tasks\RunWorkerTask;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
@@ -37,6 +39,14 @@ class RunWorkerCommand extends Command
      */
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        new RunWorkerTask();
+        $transporter = new RunWorkerData(
+            [
+                'time' => 100,
+            ]
+        );
+
+        new RunWorkerTask($transporter);
+
+        return;
     }
 }
