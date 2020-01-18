@@ -1,0 +1,8 @@
+{
+    "name": "asiries335/php-denormalization-queue",
+    "description": "denormalization the queue with use drivers a database and a redis",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {}
+}
