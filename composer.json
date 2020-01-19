@@ -6,7 +6,9 @@
     "minimum-stability": "dev",
     "require": {
         "symfony/console": "^5.1@dev",
-        "dto/dto": "dev-master"
+        "dto/dto": "dev-master",
+        "php-di/php-di": "dev-master",
+        "larapack/dd": "1.*"
     },
     "autoload": {
         "psr-4": {

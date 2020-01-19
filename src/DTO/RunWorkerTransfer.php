@@ -2,9 +2,9 @@
 
 namespace Asiries335\DenormalizationQueue\DTO;
 
-use Dto\Dto;
+use Asiries335\DenormalizationQueue\Abstracts\Transfer;
 
-class RunWorkerData extends Dto  {
+class RunWorkerTransfer extends Transfer  {
 
     protected $schema = [
         'type' => 'object',
