@@ -1,4 +1,5 @@
 <?php
+
 namespace Asiries335\DenormalizationQueue\Tasks;
 
 use Asiries335\DenormalizationQueue\DTO\RunWorkerData;
