@@ -6,7 +6,7 @@ namespace Asiries335\DenormalizationQueue\Core;
 use Dto\DtoInterface;
 use Symfony\Component\Console\Exception\InvalidArgumentException;
 
-class Task
+final class Task
 {
 
     /**
