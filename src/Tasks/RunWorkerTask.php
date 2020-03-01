@@ -3,19 +3,19 @@
 namespace Asiries335\DenormalizationQueue\Tasks;
 
 use Asiries335\DenormalizationQueue\Abstracts\Task;
-use Asiries335\DenormalizationQueue\DTO\RunWorkerTransfer;
+use Asiries335\DenormalizationQueue\DTO\RunWorkerDTO;
 
 class RunWorkerTask extends Task
 {
-    protected $data;
+    protected $context;
 
     /**
      * RunWorkerTask constructor.
-     * @param RunWorkerTransfer $runWorkerData
+     * @param RunWorkerDTO $runWorkerData
      */
-    public function __construct(RunWorkerTransfer $runWorkerData)
+    public function __construct(RunWorkerDTO $runWorkerData)
     {
-        $this->data = $runWorkerData;
+        $this->context = $runWorkerData;
     }
 
 
@@ -27,7 +27,6 @@ class RunWorkerTask extends Task
      */
     public function handle()
     {
-        dd($this->data->toArray());
         while (true) {
             echo 1;
         }

@@ -3,7 +3,7 @@
 namespace Asiries335\DenormalizationQueue\UI\CLI;
 
 use Asiries335\DenormalizationQueue\Core\Task;
-use Asiries335\DenormalizationQueue\DTO\RunWorkerTransfer;
+use Asiries335\DenormalizationQueue\DTO\RunWorkerDTO;
 use Asiries335\DenormalizationQueue\Tasks\RunWorkerTask;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
@@ -39,7 +39,7 @@ class RunWorkerCommand extends Command
      */
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $transporter = new RunWorkerTransfer(
+        $transporter = new RunWorkerDTO(
             [
                 'time' => 100,
             ]
